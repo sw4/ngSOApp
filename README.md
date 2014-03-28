@@ -1,7 +1,7 @@
 ngGitApp
 =====
 
-Angular/jQuery Angular/jQuery Stack Overflow Answers Widget 
+Angular/jQuery Stack Overflow Answers Widget 
 
 Currently coded to return a list of recent answers for a given user.
 
