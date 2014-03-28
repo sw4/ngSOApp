@@ -2,7 +2,7 @@ var ngSO = angular.module('ngSO', []);
 ngSO.controller("SOListController", ['$scope', 'SOFactory', '$timeout', function ($scope, SOFactory, $timeout) {
     $scope.getAnswers= function(user){
         SOFactory.fetch('https://api.stackexchange.com/2.2/users/'+user+'/answers?order=desc&sort=activity&site=stackoverflow').then(function (response) {        
-            var answers=response.data.items.splice(0,10);
+            var answers=response.data.items.splice(0,15);
             var questions=[];
             angular.forEach(answers, function(answer){
                 questions.push(answer.question_id);
