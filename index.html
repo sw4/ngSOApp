@@ -1,41 +1,41 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <title>ngSOApp</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <meta charset="utf-8">         
-        <!-- FontAwesome CSS -->               
-        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">        
-        <!-- ngSO CSS -->
-        <link href="css/styles.css" rel="stylesheet">         
-    </head>
-    <body data-ng-app="ngSO">         
-        <section data-ng-controller="SOListController" ng-init="getAnswers('404335')" class='ngSO'>       
-            <div class='ngSOTable'>
-                <div class='ngSOHeader'>
-                    <i class="fa fa-stack-overflow"></i> Recent Answers
-                </div>
-                <ul class='ngSOList ngSOBody'>
-                    <li ng-repeat="answer in answers">
-                        <a href='{{answer.parentQuestion.link}}' target="_blank">
-                            <span class='h1'>{{answer.parentQuestion.title}}</span>
-                            <i class="fa fa-thumbs-o-up"></i> {{answer.score}}
-                            <i class="fa fa-fire"></i> {{answer.parentQuestion.view_count}}
-                            <span class='time'>{{answer.timeago}}</span>
-                        </a>
-                    </li>
-                </ul>        
-            </div>
-        <section>
-        <!-- jQuery -->
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>    
-        <!-- Underscore -->    
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>   
-        <!-- Angular.js -->
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-        <!-- Timeago.js -->
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>        
-        <!-- ngSO Model/Controllers (Angular) -->
-        <script src="js/script.js"></script>
-    </body>
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>ngSOApp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">         
+        <!-- FontAwesome CSS -->               
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">        
+        <!-- ngSO CSS -->
+        <link href="https://rawgithub.com/sw4/ngSOApp/master/css/styles.css" rel="stylesheet">         
+    </head>
+    <body data-ng-app="ngSO">         
+        <section data-ng-controller="SOListController" ng-init="getAnswers('404335')" class='ngSO'>       
+            <div class='ngSOTable'>
+                <div class='ngSOHeader'>
+                    <i class="fa fa-stack-overflow"></i> Recent Answers
+                </div>
+                <ul class='ngSOList ngSOBody'>
+                    <li ng-repeat="answer in answers">
+                        <a href='{{answer.parentQuestion.link}}' target="_blank">
+                            <span class='h1'>{{answer.parentQuestion.title}}</span>
+                            <i class="fa fa-thumbs-o-up"></i> {{answer.score}}
+                            <i class="fa fa-fire"></i> {{answer.parentQuestion.view_count}}
+                            <span class='time'>{{answer.timeago}}</span>
+                        </a>
+                    </li>
+                </ul>        
+            </div>
+        <section>
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>    
+        <!-- Underscore -->    
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>   
+        <!-- Angular.js -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+        <!-- Timeago.js -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>        
+        <!-- ngSO Model/Controllers (Angular) -->
+        <script src="https://rawgithub.com/sw4/ngSOApp/master/js/script.js"></script>
+    </body>
 </html>
